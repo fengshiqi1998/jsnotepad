@@ -1,0 +1,134 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.notepad-search-dlg {
+  /*background-color: green;*/
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  user-select: none;
+  width: 100%;
+  z-index: 10;
+}
+
+.notepad-search-dlg .dialogbox {
+  /*background-color: green;*/
+  border: 1px solid #0f7fd6;
+  font-size: 0.8em;
+  height: 190px;
+  left: 0;
+  margin: 150px auto;
+  position: relative;
+  top: 0;
+  width: 430px;
+}
+
+.notepad-search-dlg .dialogbox .titlebar {
+  /*background-color: green;*/
+  height: 32px;
+  position: absolute;
+  width: 100%;
+}
+
+.notepad-search-dlg .dialogbox .titlebar .title {
+  /*background-color: blue;*/
+  /*font-size: 0.9em;*/
+  left: 0;
+  line-height: 32px;
+  margin: 0 10px;
+  position: absolute;
+  top: 0;
+}
+
+.notepad-search-dlg .dialogbox .titlebar .btn-close {
+  /*background-color: red;*/
+  font-size: 1.4em;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 30px;
+}
+
+.notepad-search-dlg .dialogbox .titlebar .btn-close:hover {
+  background-color: red;
+  color: #fff;
+  cursor: default;
+}
+
+.notepad-search-dlg .dialogbox .main {
+  background-color: #f1f1f1;
+  height: 160px;
+  left: 0;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+
+.notepad-search-dlg .dialogbox label {
+  left: 10px;
+  position: absolute;
+  top: 15px;
+}
+.notepad-search-dlg .dialogbox .line-num {
+
+  height: 22px;
+  left: 85px;
+  position: absolute;
+  top: 10px;
+  width: 215px;
+}
+
+.notepad-search-dlg .dialogbox .dob-btn {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  width: 86px;
+}
+
+.notepad-search-dlg .dialogbox .dob-btn .btn-search {
+  font-size: 0.6em;
+  height: 28px;
+  margin: 4px;
+  width: 86px;
+}
+
+
+.notepad-search-dlg .dialogbox .btn-cancel {
+  height: 28px;
+  margin: 4px;
+  width: 86px;
+}
+
+.notepad-search-dlg .dialogbox fieldset {
+  font-size: 0.7em;
+  height: 35px;
+  left: 170px;
+  line-height: 10px;
+  position: absolute;
+  top: 60px;
+  width: 132px;
+}
+
+
+.notepad-search-dlg .dialogbox .check-box {
+  font-size: 0.8em;
+  height: 64px;
+  left: 10px;
+  position: absolute;
+  top: 104px;
+  width: 104px;
+}
+
+.notepad-search-dlg .dialogbox .check-box input {
+  border-radius: 0;
+  border: 1px solid #000;
+  margin: 6px;
+}

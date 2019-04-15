@@ -10,7 +10,7 @@ var $dlgAbout = (function() {
     + '<div class="main">'
     + '<h1 class="slogan">JSNotepad</h1>'
     + '<hr>'
-    + '<img class="app-logo" src="../../images/notepad-icon-32.png" alt="JSNotepad">'
+    + '<img class="app-logo" src="https://raw.githubusercontent.com/wangding/jsnotepad/feat-d-about/images/notepad-icon-32.png" alt="JSNotepad">'
     + '<div class="info">'
     + '<p>作者：冯世祺</p>'
     + '<p>QQ：512653808</p>'
@@ -27,8 +27,9 @@ var $dlgAbout = (function() {
 
   function show() {
     $('body').append($dlg);
+    $dlg.find('.dialogbox').draggable({handle: $dlg.find('.titlebar')});
     $btnOk.click(function() { $dlg.remove();  });
-    $btnClose.click(function() { $dlg.remove();  });              
+    $btnClose.click(function() { $dlg.remove();  });
   }
 
   return {show: show};
