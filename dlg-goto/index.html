@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>dlg-goto</title>
-  <link rel="stylesheet" href="dlg-goto.css">
+  <link rel="stylesheet" href="layout.css">
   <link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
 </head>
 <body>
@@ -11,12 +11,16 @@
 <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js
 "></script>
-<script src="dlg-goto.js"></script>
+<script src="main.js"></script>
 <script>
 $(function() {
     $btnPopup = $('.popup');
     $btnPopup.click(function() {
-      $dlgGoto.init();
+      $dlgGoto.init({
+        curLine: 3,
+        totalLines: 5,
+        gotoHandler: function(e) { console.log('goto btn clicked! and goto %s', e) }
+      });
     });
 });
 </script>
